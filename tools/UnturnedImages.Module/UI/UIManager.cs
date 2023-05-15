@@ -73,7 +73,7 @@ namespace UnturnedImages.Module.UI
             }
             else
             {
-                var positionOffsetY = 175;
+                var positionOffsetY = 260;
 
                 void AddElement<TElement>(Func<TElement> constructor, Action<TElement> modifiers)
                     where TElement : ISleekElement
@@ -96,7 +96,7 @@ namespace UnturnedImages.Module.UI
 
                 AddElement(Glazier.Get().CreateLabel, unturnedImagesVehiclesLabel =>
                 {
-                    unturnedImagesVehiclesLabel.text = "UnturnedImages Controls";
+                    unturnedImagesVehiclesLabel.text = "Unturned 物品载具图片生成器";
                     unturnedImagesVehiclesLabel.fontAlignment = TextAnchor.MiddleCenter;
                 });
 
@@ -104,7 +104,7 @@ namespace UnturnedImages.Module.UI
 
                 AddElement(Glazier.Get().CreateButton, captureAllVehicleIconsButton =>
                 {
-                    captureAllVehicleIconsButton.text = "Export All Vehicle Images";
+                    captureAllVehicleIconsButton.text = "导出所有载具图片";
                     captureAllVehicleIconsButton.onClickedButton += OnClickedCaptureAllVehicleImagesButton;
                 });
 
@@ -112,7 +112,7 @@ namespace UnturnedImages.Module.UI
 
                 AddElement(Glazier.Get().CreateButton, captureAllVehicleIconsButton =>
                 {
-                    captureAllVehicleIconsButton.text = "Export All Item Images";
+                    captureAllVehicleIconsButton.text = "导出所有物品图片";
                     captureAllVehicleIconsButton.onClickedButton += OnClickedCaptureAllItemImagesButton;
                 });
 
@@ -122,7 +122,7 @@ namespace UnturnedImages.Module.UI
 
                 AddElement(Glazier.Get().CreateLabel, exportCertainModsLabel =>
                 {
-                    exportCertainModsLabel.text = "Export Certain Mods";
+                    exportCertainModsLabel.text = "导出某些MOD";
                 });
 
                 // Buttons - Export Certain Mod
@@ -142,7 +142,7 @@ namespace UnturnedImages.Module.UI
 
                 AddElement(Glazier.Get().CreateButton, extrasFolderButton =>
                 {
-                    extrasFolderButton.text = "Open Extras Folder";
+                    extrasFolderButton.text = "打开文件夹";
                     extrasFolderButton.onClickedButton += OnClickedOpenExtrasFolder;
                 });
 
@@ -152,7 +152,7 @@ namespace UnturnedImages.Module.UI
 
                 AddElement(Glazier.Get().CreateButton, reloadModuleButton =>
                 {
-                    reloadModuleButton.text = "Reload Module";
+                    reloadModuleButton.text = "重载mod";
                     reloadModuleButton.onClickedButton += OnClickedReloadModule;
                 });
 
@@ -162,7 +162,7 @@ namespace UnturnedImages.Module.UI
 
                 AddElement(Glazier.Get().CreateLabel, advancedSettingsLabel =>
                 {
-                    advancedSettingsLabel.text = "Advanced Settings";
+                    advancedSettingsLabel.text = "高级设置";
                 });
 
                 // Label - Vehicle Icon Angles
@@ -171,7 +171,7 @@ namespace UnturnedImages.Module.UI
 
                 AddElement(Glazier.Get().CreateLabel, vehicleIconAnglesLabel =>
                 {
-                    vehicleIconAnglesLabel.text = "Vehicle Icon Angles";
+                    vehicleIconAnglesLabel.text = "载具图片角度";
                 });
 
                 // Vehicle Icon Angles
